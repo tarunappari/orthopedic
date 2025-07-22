@@ -1,93 +1,117 @@
 import React from 'react'
-import './HeroSection.scss'
+import styles from '../../styles/landingpage/HeroSection.module.scss'
 
 const HeroSection = () => {
   return (
-    <section className="hero-section">
-      <div className="hero-container">
-        {/* Main Hero Content */}
-        <div className="hero-content">
-          <h1 className="hero-title">
-            Empower your <span className="text-blue">body</span>, Embrace your journey.
-          </h1>
+    <section className={styles.heroSection}>
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <div className={styles.textContent}>
+            <div className={styles.badge}>
+              <span className={styles.badgeIcon}>🏥</span>
+              <span>Trusted Orthopedic Care</span>
+            </div>
 
-          {/* Left Side Text */}
-          <div className="hero-left">
-            <p className="hero-subtext">Make healthy choices with Orthocure</p>
-            <button className="chat-button">
-              Chat <span className="arrow">↗</span>
-            </button>
+            <h1 className={styles.title}>
+              Expert <span className={'gradientText'}>Orthopedic</span> Care
+            </h1>
+            <h1 className={styles.title}>For Your <span className={'gradientText'}>Active Life</span></h1>
+
+            <p className={styles.subtitle}>
+              Leading orthopedic specialist providing comprehensive bone, joint, and muscle care.
+              From sports injuries to joint replacements, we help you get back to doing what you love.
+            </p>
+
+            {/* <div className={styles.stats}>
+              <div className={styles.stat}>
+                <span className={styles.statNumber}>15+</span>
+                <span className={styles.statLabel}>Years Experience</span>
+              </div>
+              <div className={styles.stat}>
+                <span className={styles.statNumber}>5000+</span>
+                <span className={styles.statLabel}>Successful Surgeries</span>
+              </div>
+              <div className={styles.stat}>
+                <span className={styles.statNumber}>98%</span>
+                <span className={styles.statLabel}>Patient Satisfaction</span>
+              </div>
+            </div> */}
+
+            <div className={styles.ctaButtons}>
+              <button className={styles.primaryBtn}>
+                <span>Book Consultation</span>
+                <svg className={styles.btnIcon} viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </div>
+
+            <div className={styles.trustIndicators}>
+              <div className={styles.trustItem}>
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
+                </svg>
+                <span>Board Certified</span>
+              </div>
+              <div className={styles.trustItem}>
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span>Award Winning</span>
+              </div>
+              <div className={styles.trustItem}>
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span>5-Star Rated</span>
+              </div>
+            </div>
           </div>
 
-          {/* Right Side Text */}
-          <div className="hero-right">
-            <p className="hero-subtext">Make an appointment with a doctor in an easy way</p>
-            <button className="appointment-button">
-              <span className="arrow">→</span>
-            </button>
-          </div>
+          <div className={styles.imageContent}>
+            <div className={styles.imageWrapper}>
+              <div className={styles.mainImage}>
+                <div className={styles.imagePlaceholder}>
+                  <svg className={styles.doctorIcon} viewBox="0 0 24 24" fill="none">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <circle cx="12" cy="7" r="4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>Professional Orthopedic Doctor</span>
+                </div>
+              </div>
 
-          {/* Central 3D Figure */}
-          <div className="hero-figure">
-            <div className="figure-placeholder">
-              {/* This would be replaced with actual 3D anatomical illustration */}
-              <div className="running-figure"></div>
+              <div className={styles.floatingCard1}>
+                <div className={styles.cardIcon}>⚡</div>
+                <div className={styles.cardContent}>
+                  <span className={styles.cardTitle}>Quick Recovery</span>
+                  <span className={styles.cardDesc}>Advanced techniques</span>
+                </div>
+              </div>
+
+              <div className={styles.floatingCard2}>
+                <div className={styles.cardIcon}>🎯</div>
+                <div className={styles.cardContent}>
+                  <span className={styles.cardTitle}>Precision Care</span>
+                  <span className={styles.cardDesc}>Minimally invasive</span>
+                </div>
+              </div>
+
+              <div className={styles.floatingCard3}>
+                <div className={styles.cardIcon}>💪</div>
+                <div className={styles.cardContent}>
+                  <span className={styles.cardTitle}>Strength Focus</span>
+                  <span className={styles.cardDesc}>Full rehabilitation</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Info Cards Section */}
-        <div className="info-cards">
-          {/* Left Card - Active Users & Doctors */}
-          <div className="info-card users-card">
-            <div className="card-header">
-              <h3 className="card-title">2k+</h3>
-              <p className="card-subtitle">ACTIVE USERS</p>
-            </div>
-            <div className="services-section">
-              <h4 className="services-title">SERVICES</h4>
-              <p className="services-description">
-                Our expert team is dedicated to addressing your unique needs, from diagnosis to treatment and rehabilitation.
-              </p>
-              <button className="more-button">
-                More <span className="arrow">↗</span>
-              </button>
-            </div>
-            <div className="doctors-section">
-              <div className="doctor-avatars">
-                <div className="avatar avatar-1"></div>
-                <div className="avatar avatar-2"></div>
-                <div className="avatar avatar-3"></div>
-              </div>
-              <p className="doctors-count">550+ Doctors</p>
-            </div>
-          </div>
-
-          {/* Middle Card - Treatments */}
-          <div className="info-card treatments-card">
-            <h3 className="card-title">TREATMENTS</h3>
-            <p className="card-description">
-              Discover a range of personalized orthopedic services designed to enhance your quality of life.
-            </p>
-          </div>
-
-          {/* Right Card - Online Care */}
-          <div className="info-card online-care-card">
-            <div className="care-icon">
-              <div className="icon-circles">
-                <div className="circle circle-1"></div>
-                <div className="circle circle-2"></div>
-                <div className="circle circle-3"></div>
-              </div>
-            </div>
-            <h3 className="card-title">ONLINE CARE</h3>
-            <p className="card-description">
-              1-ON-1 appointments with specialist doctors for you
-            </p>
-            <button className="contact-button">
-              Contact <span className="arrow">↗</span>
-            </button>
-          </div>
+        <div className={styles.backgroundElements}>
+          <div className={styles.gradientOrb1}></div>
+          <div className={styles.gradientOrb2}></div>
+          <div className={styles.gridPattern}></div>
         </div>
       </div>
     </section>

@@ -1,14 +1,42 @@
 .container {
-  position: absolute;
-  background: transparent;
-  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   width: 100%;
-  background-color: transparent;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 102, 255, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  top: 50px; /* Account for top slider */
+  padding: 1rem 5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 20px rgba(0, 102, 255, 0.1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 102, 255, 0.02) 0%,
+      rgba(107, 166, 255, 0.04) 50%,
+      rgba(123, 176, 255, 0.01) 100%
+    );
+    z-index: -1;
+  }
+
+  // Scrolled state enhancement
+  &.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 30px rgba(0, 102, 255, 0.15);
+    padding: 0.75rem 5rem;
+  }
 
   .title {
     a:hover::after {
@@ -16,7 +44,7 @@
     }
   }
 
-  & > div{
+  & > div {
     display: flex;
     gap: 1rem;
   }
@@ -85,23 +113,32 @@
 // Mobile Responsive Styles
 @media (max-width: 768px) {
   .container {
-    top: 45px; /* Adjust for smaller slider height */
+    padding: 1rem 2rem;
+    top: 0;
+
+    &.scrolled {
+      padding: 0.75rem 2rem;
+    }
 
     .title {
-      img{
+      img {
         width: 13rem;
       }
     }
 
-    a{
+    a {
       font-size: 1rem;
     }
   }
 }
 
 @media (max-width: 480px) {
-  .container{
-    top: 40px; /* Adjust for smallest slider height */
-    flex-direction: column;
+  .container {
+    padding: 1rem 1rem;
+    top: 0;
+
+    &.scrolled {
+      padding: 0.75rem 1rem;
+    }
   }
 }

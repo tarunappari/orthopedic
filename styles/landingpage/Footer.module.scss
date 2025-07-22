@@ -1,0 +1,467 @@
+// Footer Styles
+.footer {
+  background: linear-gradient(135deg, #f8faff 0%, #ffffff 50%, #f0f7ff 100%);
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 102, 255, 0.1);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 102, 255, 0.3), transparent);
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
+}
+
+// Main Footer Content
+.footerMain {
+  padding: 4rem 0 2rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+// Brand Section
+.brandSection {
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .logoIcon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #0066ff, #3385ff);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  .logoText {
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin: 0 0 0.25rem 0;
+      color: #000;
+    }
+
+    span {
+      font-size: 0.9rem;
+      color: #0066ff;
+      font-weight: 500;
+    }
+  }
+
+  .brandDescription {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+
+  .quickStats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .statItem {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 102, 255, 0.05);
+      border: 1px solid rgba(0, 102, 255, 0.1);
+      border-radius: 12px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 102, 255, 0.1);
+      }
+
+      .statNumber {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #0066ff;
+        margin-bottom: 0.25rem;
+      }
+
+      .statLabel {
+        font-size: 0.8rem;
+        color: #666;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// Links Sections
+.linksSection, .servicesSection {
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #000;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: linear-gradient(45deg, #0066ff, #3385ff);
+      border-radius: 1px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 0.75rem;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #666;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+        padding: 0.25rem 0;
+
+        &:hover {
+          color: #0066ff;
+          transform: translateX(5px);
+
+          svg {
+            transform: translateX(3px);
+          }
+        }
+
+        svg {
+          width: 14px;
+          height: 14px;
+          transition: transform 0.3s ease;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+
+// Contact Section
+.contactSection {
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #000;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: linear-gradient(45deg, #0066ff, #3385ff);
+      border-radius: 1px;
+    }
+  }
+
+  .contactList {
+    margin-bottom: 2rem;
+  }
+
+  .contactItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    .contactIcon {
+      width: 20px;
+      height: 20px;
+      color: #0066ff;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .emergencyContact {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(239, 68, 68, 0.05);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    .emergencyIcon {
+      width: 40px;
+      height: 40px;
+      background: rgba(239, 68, 68, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #dc2626;
+      flex-shrink: 0;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .emergencyText {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      strong {
+        color: #dc2626;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      span {
+        color: #333;
+        font-weight: 500;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .socialLinks {
+    h5 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #0066ff;
+    }
+
+    .socialIcons {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .socialIcon {
+      width: 40px;
+      height: 40px;
+      background: rgba(0, 102, 255, 0.05);
+      border: 1px solid rgba(0, 102, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      transition: all 0.3s ease;
+      text-decoration: none;
+
+      &:hover {
+        background: rgba(0, 102, 255, 0.1);
+        border-color: rgba(0, 102, 255, 0.3);
+        color: #0066ff;
+        transform: translateY(-2px);
+      }
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}
+
+// Footer Bottom
+.footerBottom {
+  border-top: 1px solid rgba(0, 102, 255, 0.1);
+  padding: 1.5rem 0;
+  background: rgba(0, 102, 255, 0.02);
+
+  .bottomContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  }
+
+  .copyright {
+    p {
+      margin: 0;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  }
+
+  .legalLinks {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    @media (max-width: 640px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    a {
+      color: #666;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #0066ff;
+      }
+    }
+
+    .separator {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .credentials {
+    display: flex;
+    gap: 1.5rem;
+
+    @media (max-width: 640px) {
+      justify-content: center;
+    }
+
+    .credentialItem {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #666;
+      font-size: 0.85rem;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        color: #fbbf24;
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .footerMain {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .brandSection {
+    .logo {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .brandDescription {
+      text-align: center;
+    }
+  }
+
+  .linksSection, .servicesSection, .contactSection {
+    text-align: center;
+
+    h4::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .contactItem {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .emergencyContact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .socialLinks {
+    .socialIcons {
+      justify-content: center;
+    }
+  }
+}

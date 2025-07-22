@@ -1,0 +1,475 @@
+// Contact Section Styles
+.contactSection {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f8faff 0%, #ffffff 50%, #f0f7ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
+}
+
+// Section Header
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 102, 255, 0.1);
+  color: #0066ff;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(0, 102, 255, 0.15);
+    transform: translateY(-2px);
+  }
+}
+
+.badgeIcon {
+  font-size: 1.125rem;
+}
+
+.sectionTitle {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.sectionDescription {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 90%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+// Contact Content Layout
+.contactContent {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+// Contact Information
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.infoCard {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 102, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 102, 255, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 102, 255, 0.15);
+    border-color: rgba(0, 102, 255, 0.2);
+  }
+}
+
+.infoHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+  }
+}
+
+.infoIcon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #0066ff, #3385ff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.infoDetails {
+  color: #666;
+  line-height: 1.6;
+
+  p {
+    margin: 0.5rem 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: #0066ff;
+      font-weight: 600;
+    }
+  }
+}
+
+.availability,
+.responseTime {
+  color: #0066ff !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.scheduleItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 102, 255, 0.1);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  span:first-child {
+    font-weight: 500;
+    color: #333;
+  }
+
+  span:last-child {
+    color: #0066ff;
+    font-weight: 600;
+  }
+}
+
+// Contact Form
+.contactForm {
+  position: sticky;
+  top: 2rem;
+}
+
+.formCard {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 102, 255, 0.1);
+  border-radius: 25px;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(0, 102, 255, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
+}
+
+.formHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: #666;
+    font-size: 1rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  label {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.9rem;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 1rem;
+    border: 2px solid rgba(0, 102, 255, 0.1);
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
+
+    &:focus {
+      outline: none;
+      border-color: #0066ff;
+      box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+      background: white;
+    }
+
+    &::placeholder {
+      color: #999;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  select {
+    cursor: pointer;
+  }
+}
+
+.submitButton {
+  background: linear-gradient(45deg, #0066ff, #3385ff);
+  color: white;
+  border: none;
+  padding: 1.2rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  box-shadow: 0 8px 25px rgba(0, 102, 255, 0.3);
+  margin-top: 1rem;
+
+  span {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  &:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(0, 102, 255, 0.4);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}
+
+.buttonIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.successMessage {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(34, 197, 94, 0.1);
+  color: #16a34a;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  margin-top: 1rem;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  span {
+    font-weight: 500;
+  }
+}
+
+// Emergency Banner
+.emergencyBanner {
+  margin-top: 4rem;
+  background: linear-gradient(45deg, #dc2626, #ef4444);
+  border-radius: 20px;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+}
+
+.emergencyContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
+
+.emergencyIcon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.emergencyText {
+  flex: 1;
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 0;
+
+    strong {
+      font-weight: 700;
+      color: #fef3c7;
+    }
+  }
+}
+
+.emergencyButton {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 4rem 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 3rem;
+  }
+
+  .contactContent {
+    gap: 2rem;
+  }
+
+  .infoCard {
+    padding: 1.5rem;
+  }
+
+  .formCard {
+    position: static;
+  }
+
+  .emergencyContent {
+    flex-direction: column;
+    text-align: center;
+  }
+}
