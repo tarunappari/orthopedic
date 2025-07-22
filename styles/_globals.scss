@@ -51,18 +51,11 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-html {
-  /* Remove this line as it conflicts with Lenis */
-  /* scroll-behavior: smooth; */
-}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* Remove these lines as they conflict with Lenis */
-  /* scroll-behavior: smooth; */
-  /* scroll-snap-align: center; */
 }
 
 body {
@@ -75,7 +68,6 @@ body {
 .pageContainer{
   width: 99.65vw !important;
   overflow-x: hidden;
-  margin-top: 50px; /* Account for top slider */
 }
 
 @media (max-width: 768px) {
@@ -180,83 +172,6 @@ svg:hover {
   transform: scale(1.05);
 }
 
-.textGradient {
-  font-weight: bold;
-  background: linear-gradient(to right, black, #ec333a,#ec333a);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.textGradient2 {
-  font-weight: bold;
-  background: linear-gradient(to right, white, #ec333a);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.shadowOverlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50vh;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-  z-index: 2; // Adjust based on where you want it layered
-}
-
-.whitebgButton {
-  padding: 0.5rem 4rem;
-  background-color: var(--white);
-  align-self: center;
-  cursor: pointer;
-  z-index: 9;
-}
-
-.blackBtn {
-  padding: 0.5rem 4rem;
-  background-color: var(--black);
-  color: var(--white);
-  text-align: center;
-  font-size: 0.9rem;
-  align-self: center;
-  cursor: pointer;
-  z-index: 9;
-  border-radius: 0.2rem;
-}
-
 .imgContainer {
   overflow: hidden;
-}
-
-// custom animations since tailwind css isnt working
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideOutRight {
-  from {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-}
-
-.animate-slide-in {
-  animation: slideInRight 0.5s ease-in-out forwards;
-}
-
-.animate-slide-out {
-  animation: slideOutRight 0.5s ease-in-out forwards;
 }
