@@ -111,7 +111,6 @@ const HeroSection = () => {
         <div className={styles.backgroundElements}>
           <div className={styles.gradientOrb1}></div>
           <div className={styles.gradientOrb2}></div>
-          <div className={styles.gridPattern}></div>
         </div>
       </div>
     </section>

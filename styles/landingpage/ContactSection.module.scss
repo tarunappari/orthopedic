@@ -26,8 +26,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(0, 102, 255, 0.1);
-  color: #0066ff;
+  background: rgba(5, 124, 139, 0.1);
+  color: #057c8b;
   padding: 0.5rem 1rem;
   border-radius: 50px;
   font-size: 0.875rem;
@@ -36,7 +36,7 @@
   transition: all 0.3s ease;
 
   &:hover {
-    background: rgba(0, 102, 255, 0.15);
+    background: rgba(5, 124, 139, 0.15);
     transform: translateY(-2px);
   }
 }
@@ -84,16 +84,16 @@
 .infoCard {
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 102, 255, 0.1);
+  border: 1px solid rgba(5, 124, 139, 0.1);
   border-radius: 20px;
   padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 102, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(5, 124, 139, 0.1);
   transition: all 0.3s ease;
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 102, 255, 0.15);
-    border-color: rgba(0, 102, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(5, 124, 139, 0.15);
+    border-color: rgba(5, 124, 139, 0.2);
   }
 }
 
@@ -114,7 +114,7 @@
 .infoIcon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(45deg, #0066ff, #3385ff);
+  background: linear-gradient(45deg, #057c8b, #0a9fb0);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -144,7 +144,7 @@
     }
 
     strong {
-      color: #0066ff;
+      color: #057c8b;
       font-weight: 600;
     }
   }
@@ -152,7 +152,7 @@
 
 .availability,
 .responseTime {
-  color: #0066ff !important;
+  color: #057c8b !important;
   font-weight: 500;
   font-size: 0.9rem;
 }
@@ -174,7 +174,7 @@
   }
 
   span:last-child {
-    color: #0066ff;
+    color: #057c8b;
     font-weight: 600;
   }
 }
@@ -188,10 +188,10 @@
 .formCard {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 102, 255, 0.1);
+  border: 1px solid rgba(5, 124, 139, 0.1);
   border-radius: 25px;
   padding: 3rem;
-  box-shadow: 0 20px 60px rgba(0, 102, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(5, 124, 139, 0.1);
 
   @media (max-width: 768px) {
     padding: 2rem;
@@ -247,7 +247,7 @@
   select,
   textarea {
     padding: 1rem;
-    border: 2px solid rgba(0, 102, 255, 0.1);
+    border: 2px solid rgba(5, 124, 139, 0.1);
     border-radius: 12px;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -255,8 +255,8 @@
 
     &:focus {
       outline: none;
-      border-color: #0066ff;
-      box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+      border-color: #057c8b;
+      box-shadow: 0 0 0 3px rgba(5, 124, 139, 0.1);
       background: white;
     }
 
@@ -276,7 +276,7 @@
 }
 
 .submitButton {
-  background: linear-gradient(45deg, #0066ff, #3385ff);
+  background: linear-gradient(45deg, #057c8b, #0a9fb0);
   color: white;
   border: none;
   padding: 1.2rem 2rem;
@@ -287,7 +287,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  box-shadow: 0 8px 25px rgba(0, 102, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(5, 124, 139, 0.3);
   margin-top: 1rem;
 
   span {
@@ -299,7 +299,7 @@
 
   &:hover:not(:disabled) {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(0, 102, 255, 0.4);
+    box-shadow: 0 12px 35px rgba(5, 124, 139, 0.4);
   }
 
   &:active {

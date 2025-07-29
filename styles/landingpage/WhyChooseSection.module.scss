@@ -46,8 +46,8 @@
   position: absolute;
   inset: 0;
   opacity: 0.2;
-  background-image: linear-gradient(rgba(0, 168, 204, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 168, 204, 0.1) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(5, 124, 139, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(5, 124, 139, 0.1) 1px, transparent 1px);
   background-size: 50px 50px;
   z-index: 1;
 }
@@ -154,8 +154,8 @@
   aspect-ratio: 4/4;
   border-radius: 1rem;
   overflow: hidden;
-  border: 1px solid rgba(0, 168, 204, 0.2);
-  box-shadow: 0 25px 50px -12px rgba(0, 168, 204, 0.1);
+  border: 1px solid rgba(5, 124, 139, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(5, 124, 139, 0.1);
   position: relative;
   background: rgba(0, 0, 0, 0.5);
 
@@ -211,8 +211,8 @@
     gap: 0.5rem;
 
     .expertiseTag {
-      background: rgba(0, 168, 204, 0.2);
-      color: #00a8cc;
+      background: rgba(5, 124, 139, 0.2);
+      color: #057c8b;
       padding: 0.25rem 0.5rem;
       border-radius: 9999px;
       font-size: 0.75rem;
@@ -269,7 +269,7 @@
   }
 
   .ctaButton {
-    background: linear-gradient(135deg, #00a8cc, #0077be);
+    background: linear-gradient(135deg, #057c8b, #0a9fb0);
     color: var(--white);
     padding: 1rem 2rem;
     border-radius: 9999px;
@@ -283,7 +283,7 @@
     gap: 0.5rem;
 
     &:hover {
-      box-shadow: 0 10px 25px rgba(0, 168, 204, 0.3);
+      box-shadow: 0 10px 25px rgba(5, 124, 139, 0.3);
       transform: scale(1.05);
     }
 

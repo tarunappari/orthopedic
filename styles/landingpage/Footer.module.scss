@@ -13,7 +13,7 @@
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(0, 102, 255, 0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(5, 124, 139, 0.3), transparent);
   }
 }
 
@@ -75,7 +75,7 @@
   .logoIcon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(45deg, #0066ff, #3385ff);
+    background: linear-gradient(45deg, #057c8b, #0a9fb0);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -98,7 +98,7 @@
 
     span {
       font-size: 0.9rem;
-      color: #0066ff;
+      color: #057c8b;
       font-weight: 500;
     }
   }
@@ -124,21 +124,21 @@
     .statItem {
       text-align: center;
       padding: 1rem;
-      background: rgba(0, 102, 255, 0.05);
-      border: 1px solid rgba(0, 102, 255, 0.1);
+      background: rgba(5, 124, 139, 0.05);
+      border: 1px solid rgba(5, 124, 139, 0.1);
       border-radius: 12px;
       transition: all 0.3s ease;
 
       &:hover {
         transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0, 102, 255, 0.1);
+        box-shadow: 0 5px 15px rgba(5, 124, 139, 0.1);
       }
 
       .statNumber {
         display: block;
         font-size: 1.5rem;
         font-weight: 800;
-        color: #0066ff;
+        color: #057c8b;
         margin-bottom: 0.25rem;
       }
 
@@ -167,7 +167,7 @@
       left: 0;
       width: 30px;
       height: 2px;
-      background: linear-gradient(45deg, #0066ff, #3385ff);
+      background: linear-gradient(45deg, #057c8b, #0a9fb0);
       border-radius: 1px;
     }
   }
@@ -191,7 +191,7 @@
         padding: 0.25rem 0;
 
         &:hover {
-          color: #0066ff;
+          color: #057c8b;
           transform: translateX(5px);
 
           svg {
@@ -226,7 +226,7 @@
       left: 0;
       width: 30px;
       height: 2px;
-      background: linear-gradient(45deg, #0066ff, #3385ff);
+      background: linear-gradient(45deg, #057c8b, #0a9fb0);
       border-radius: 1px;
     }
   }
@@ -247,7 +247,7 @@
     .contactIcon {
       width: 20px;
       height: 20px;
-      color: #0066ff;
+      color: #057c8b;
       flex-shrink: 0;
       margin-top: 0.1rem;
 
@@ -309,7 +309,7 @@
       font-size: 1rem;
       font-weight: 600;
       margin-bottom: 1rem;
-      color: #0066ff;
+      color: #057c8b;
     }
 
     .socialIcons {
@@ -321,8 +321,8 @@
     .socialIcon {
       width: 40px;
       height: 40px;
-      background: rgba(0, 102, 255, 0.05);
-      border: 1px solid rgba(0, 102, 255, 0.2);
+      background: rgba(5, 124, 139, 0.05);
+      border: 1px solid rgba(5, 124, 139, 0.2);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -332,9 +332,9 @@
       text-decoration: none;
 
       &:hover {
-        background: rgba(0, 102, 255, 0.1);
-        border-color: rgba(0, 102, 255, 0.3);
-        color: #0066ff;
+        background: rgba(5, 124, 139, 0.1);
+        border-color: rgba(5, 124, 139, 0.3);
+        color: #057c8b;
         transform: translateY(-2px);
       }
 
@@ -348,9 +348,9 @@
 
 // Footer Bottom
 .footerBottom {
-  border-top: 1px solid rgba(0, 102, 255, 0.1);
+  border-top: 1px solid rgba(5, 124, 139, 0.1);
   padding: 1.5rem 0;
-  background: rgba(0, 102, 255, 0.02);
+  background: rgba(5, 124, 139, 0.02);
 
   .bottomContent {
     display: flex;
@@ -390,7 +390,7 @@
       transition: color 0.3s ease;
 
       &:hover {
-        color: #0066ff;
+        color: #057c8b;
       }
     }
 

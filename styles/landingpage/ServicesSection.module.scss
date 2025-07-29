@@ -2,7 +2,12 @@
 .servicesSection {
   position: relative;
   padding: 6rem 0;
-  background: linear-gradient(135deg, #f8faff 0%, #ffffff 50%, #f0f7ff 100%);
+  background: linear-gradient(
+      135deg,
+      rgba(0, 233, 255, 0.05) 0%,
+      rgba(124, 233, 255, 0.08) 50%,
+      rgba(130, 253, 255, 0.03) 100%
+    );
   overflow: hidden;
 }
 
@@ -24,9 +29,9 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(0, 102, 255, 0.1);
+  background: rgba(5, 124, 139, 0.1);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 102, 255, 0.2);
+  border: 1px solid rgba(5, 124, 139, 0.2);
   padding: 0.5rem 1rem;
   border-radius: 50px;
   font-size: 0.9rem;
@@ -36,7 +41,7 @@
   transition: all 0.3s ease;
 
   &:hover {
-    background: rgba(0, 102, 255, 0.15);
+    background: rgba(5, 124, 139, 0.15);
     transform: translateY(-2px);
   }
 }
@@ -54,7 +59,7 @@
 }
 
 .highlight {
-  background: linear-gradient(45deg, #0066ff, #3385ff);
+  background: linear-gradient(45deg, #057c8b, #0a9fb0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -97,8 +102,8 @@
 
   &:hover {
     transform: translateY(-10px);
-    border-color: rgba(0, 102, 255, 0.3);
-    box-shadow: 0 20px 60px rgba(0, 102, 255, 0.15);
+    border-color: rgba(5, 124, 139, 0.3);
+    box-shadow: 0 20px 60px rgba(5, 124, 139, 0.15);
 
     .cardGlow {
       opacity: 1;
@@ -113,7 +118,7 @@
     }
 
     .learnMoreBtn {
-      background: linear-gradient(45deg, #0066ff, #3385ff);
+      background: linear-gradient(45deg, #057c8b, #0a9fb0);
       color: white;
       transform: translateX(5px);
     }
@@ -151,9 +156,9 @@
   bottom: 0;
   background: linear-gradient(
     135deg,
-    rgba(0, 102, 255, 0.7) 0%,
-    rgba(51, 133, 255, 0.6) 50%,
-    rgba(0, 102, 255, 0.8) 100%
+    rgba(5, 124, 139, 0.7) 0%,
+    rgba(10, 159, 176, 0.6) 50%,
+    rgba(5, 124, 139, 0.8) 100%
   );
   display: flex;
   align-items: center;
@@ -213,7 +218,7 @@
 .featureIcon {
   width: 20px;
   height: 20px;
-  background: linear-gradient(45deg, #0066ff, #3385ff);
+  background: linear-gradient(45deg, #057c8b, #0a9fb0);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -235,7 +240,7 @@
   align-items: center;
   gap: 0.5rem;
   background: transparent;
-  color: #0066ff;
+  color: #000409;
   border: 2px solid rgba(0, 102, 255, 0.2);
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
@@ -263,7 +268,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(0, 102, 255, 0.05), rgba(51, 133, 255, 0.05));
+  background: linear-gradient(45deg, rgba(5, 124, 139, 0.05), rgba(10, 159, 176, 0.05));
   border-radius: 20px;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -275,8 +280,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(51, 133, 255, 0.08));
-  border: 1px solid rgba(0, 102, 255, 0.1);
+  background: linear-gradient(135deg, rgba(5, 124, 139, 0.05), rgba(10, 159, 176, 0.08));
+  border: 1px solid rgba(5, 124, 139, 0.1);
   border-radius: 25px;
   padding: 3rem;
   margin-top: 2rem;
@@ -320,7 +325,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  background: linear-gradient(45deg, #0066ff, #3385ff);
+  background: linear-gradient(45deg, #057c8b, #0a9fb0);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -329,11 +334,11 @@
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(0, 102, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(5, 124, 139, 0.3);
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(0, 102, 255, 0.4);
+    box-shadow: 0 12px 35px rgba(5, 124, 139, 0.4);
   }
 }
 
@@ -342,8 +347,8 @@
   align-items: center;
   gap: 0.75rem;
   background: transparent;
-  color: #0066ff;
-  border: 2px solid #0066ff;
+  color: #057c8b;
+  border: 2px solid #057c8b;
   padding: 1rem 2rem;
   border-radius: 50px;
   font-weight: 600;
@@ -352,10 +357,10 @@
   transition: all 0.3s ease;
 
   &:hover {
-    background: #0066ff;
+    background: linear-gradient(45deg, #057c8b, #0a9fb0);
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 102, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(5, 124, 139, 0.2);
   }
 }
 
@@ -378,7 +383,7 @@
 .floatingShape1, .floatingShape2, .floatingShape3 {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(45deg, rgba(0, 102, 255, 0.1), rgba(51, 133, 255, 0.05));
+  background: linear-gradient(45deg, rgba(5, 124, 139, 0.1), rgba(10, 159, 176, 0.05));
   animation: floatShape 8s ease-in-out infinite;
 }
 
